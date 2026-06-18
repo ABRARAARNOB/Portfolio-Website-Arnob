@@ -1,9 +1,9 @@
 /* Liquid Glass UI Redesign */
 :root {
 	/* Dark Obsidian Glassmorphism Theme */
-	--bg-primary: #0a0e17;
-	--bg-secondary: #12182b;
-	--bg-gradient: #0a0e17;
+	--bg-primary: #05060b;
+	--bg-secondary: #080a12;
+	--bg-gradient: radial-gradient(ellipse at 0% 0%, rgba(76, 21, 64, 0.5) 0%, #05060b 45%, rgba(9, 34, 61, 0.6) 100%);
 	--text-primary: #f8fafc;
 	--text-secondary: #94a3b8;
 	--main-color: #f472b6;
@@ -75,36 +75,36 @@ body.light-theme {
 	z-index: -1;
 	pointer-events: none;
 	overflow: hidden;
-	opacity: 0.8;
+	filter: blur(120px);
+	opacity: 0.6;
 	transition: var(--transition-premium);
 }
 
 .ambient-glow .blob {
 	position: absolute;
-	width: 80vw;
-	height: 80vw;
+	width: 60vw;
+	height: 60vw;
 	border-radius: 50%;
-	background: radial-gradient(circle, rgba(142, 28, 110, 0.7) 0%, transparent 60%);
-	left: -20%;
-	top: -10%;
-	animation: moveLeft 20s infinite alternate ease-in-out;
+	background: #73125c; /* Deep magenta */
+	opacity: 0.3;
+	mix-blend-mode: screen;
+	animation: move 25s infinite alternate ease-in-out;
 }
 
 .ambient-glow .blob:nth-child(2) {
-	background: radial-gradient(circle, rgba(9, 123, 168, 0.7) 0%, transparent 60%);
-	right: -20%;
-	top: 30%;
-	left: auto;
-	animation: moveRight 25s infinite alternate ease-in-out;
-	animation-delay: -5s;
+	background: #0ea5e9; /* Rich teal/blue */
+	right: -10%;
+	top: 40%;
+	animation-duration: 35s;
+	animation-delay: -7s;
 }
 
 .ambient-glow .blob:nth-child(3) {
-	background: radial-gradient(circle, rgba(30, 58, 138, 0.5) 0%, transparent 60%);
-	left: 20%;
-	bottom: -20%;
-	animation: moveBottom 30s infinite alternate ease-in-out;
-	animation-delay: -10s;
+	background: #6366f1; /* Indigo blob for extra depth */
+	left: 10%;
+	bottom: -15%;
+	animation-duration: 30s;
+	animation-delay: -12s;
 }
 
 @keyframes moveLeft {
