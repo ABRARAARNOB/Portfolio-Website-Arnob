@@ -219,7 +219,10 @@ html {
 
 body {
 	min-height: 100vh;
-	background: var(--bg-gradient);
+	background-color: var(--bg-primary);
+	background-image: var(--bg-gradient);
+	background-attachment: fixed;
+	background-size: cover;
 	color: var(--text-primary);
 	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
