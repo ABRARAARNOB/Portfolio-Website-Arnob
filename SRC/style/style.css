@@ -525,6 +525,11 @@ header.scrolled {
 	box-shadow: 0 10px 40px rgba(124, 58, 237, 0.2);
 	transition: var(--transition-premium);
 	z-index: 1;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
 }
 
 .liquid-morph:hover {
