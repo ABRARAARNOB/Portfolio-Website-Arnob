@@ -1,9 +1,9 @@
 /* Liquid Glass UI Redesign */
 :root {
 	/* Dark Obsidian Glassmorphism Theme */
-	--bg-primary: #05060b;
-	--bg-secondary: #080a12;
-	--bg-gradient: radial-gradient(ellipse at 0% 0%, rgba(76, 21, 64, 0.5) 0%, #05060b 45%, rgba(9, 34, 61, 0.6) 100%);
+	--bg-primary: #0a0e17;
+	--bg-secondary: #12182b;
+	--bg-gradient: radial-gradient(circle at 0% 50%, rgba(180, 50, 150, 0.15) 0%, transparent 50%), radial-gradient(circle at 100% 50%, rgba(10, 150, 200, 0.15) 0%, transparent 50%), #0a0e17;
 	--text-primary: #f8fafc;
 	--text-secondary: #94a3b8;
 	--main-color: #f472b6;
@@ -76,7 +76,7 @@ body.light-theme {
 	pointer-events: none;
 	overflow: hidden;
 	filter: blur(120px);
-	opacity: 0.6;
+	opacity: 0.3;
 	transition: var(--transition-premium);
 }
 
@@ -85,8 +85,8 @@ body.light-theme {
 	width: 60vw;
 	height: 60vw;
 	border-radius: 50%;
-	background: #73125c; /* Deep magenta */
-	opacity: 0.3;
+	background: #b43296; /* Matching magenta */
+	opacity: 0.15;
 	mix-blend-mode: screen;
 	animation: move 25s infinite alternate ease-in-out;
 }
