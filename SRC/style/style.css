@@ -569,7 +569,7 @@ header.scrolled {
 	aspect-ratio: 1;
 	margin: 0 auto;
 	border-radius: 20% 30% 15% 25% / 25% 15% 30% 20%;
-	animation: morph 8s ease-in-out infinite alternate;
+	animation: morph 4s ease-in-out infinite alternate;
 	overflow: hidden;
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	box-shadow: 0 10px 40px rgba(124, 58, 237, 0.2);
