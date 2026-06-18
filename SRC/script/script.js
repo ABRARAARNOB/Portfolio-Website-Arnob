@@ -166,6 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			<div class="blob"></div>
 			<div class="blob"></div>
 			<div class="blob"></div>
+			<div class="blob white-light"></div>
+			<div class="blob white-light"></div>
 		`;
 		document.body.prepend(ambientGlow);
 	}
